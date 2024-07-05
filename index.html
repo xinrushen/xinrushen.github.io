@@ -1,25 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-  
-  <head>
-    <meta charset="UTF-B">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewpoint" content="width-device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    <title>Home</title>
-  </head>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Website Title</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        scroll-behavior: smooth; /* Enable smooth scrolling */
+    }
 
-  <body>
-    <div class="container">
-      <h1>This is my personal webiste. This is the home page</h1>
-      <h2>Coming soon</h2>
-      <a href="./about.html"><h2>About</h2></a>
-      <a href="./skills.html"><h2>Skills</h2></a>
-      <a href="./hobbies.html"><h2>Hobbies</h2></a>
-      <a href="./projects.html"><h2>Projects</h2></a>
-      <a href="./publications.html"><h2>Publications</h2></a>
-    </div>
-  </body>
-  
+    .section {
+        height: 100vh; /* Full viewport height for each section */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 3rem;
+    }
+
+    /* Define different background colors for each section */
+    .section:nth-child(odd) {
+        background-color: #4CAF50; /* Green */
+    }
+
+    .section:nth-child(even) {
+        background-color: #2196F3; /* Blue */
+    }
+</style>
+</head>
+<body>
+    <!-- Sections for your website -->
+    <section class="section" id="section1">
+        Page 1
+    </section>
+    <section class="section" id="section2">
+        Page 2
+    </section>
+    <section class="section" id="section3">
+        Page 3
+    </section>
+    <section class="section" id="section4">
+        Page 4
+    </section>
+
+    <!-- Navigation links (optional) -->
+    <nav style="position: fixed; top: 10px; right: 10px;">
+        <ul style="list-style-type: none; padding: 0;">
+            <li><a href="#section1">1</a></li>
+            <li><a href="#section2">2</a></li>
+            <li><a href="#section3">3</a></li>
+            <li><a href="#section4">4</a></li>
+        </ul>
+    </nav>
+
+    <!-- JavaScript for smooth scrolling (optional) -->
+    <script>
+        // Smooth scrolling when clicking navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
 </html>
