@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Xinru Shen</title>
+<title>Your Website Title</title>
 <style>
     body {
         margin: 0;
@@ -12,7 +12,7 @@
     }
 
     .section {
-        height: 100vh; /* Full viewport height for each section */
+        min-height: 100vh; /* Full viewport height for each section */
         display: flex;
         justify-content: center;
         align-items: center;
@@ -21,12 +21,100 @@
     }
 
     /* Define different background colors for each section */
-    .section:nth-child(odd) {
+    #section1 {
         background-color: #4CAF50; /* Green */
     }
 
-    .section:nth-child(even) {
+    #section2 {
         background-color: #2196F3; /* Blue */
+    }
+
+    #section3 {
+        background-color: #FF9800; /* Orange */
+    }
+
+    #section4 {
+        background-color: #9C27B0; /* Purple */
+    }
+</style>
+</head>
+<body>
+    <!-- Sections for your website -->
+    <section class="section" id="section1">
+        Page 1
+    </section>
+    <section class="section" id="section2">
+        Page 2
+    </section>
+    <section class="section" id="section3">
+        Page 3
+    </section>
+    <section class="section" id="section4">
+        Page 4
+    </section>
+
+    <!-- Navigation links (optional) -->
+    <nav style="position: fixed; top: 10px; right: 10px;">
+        <ul style="list-style-type: none; padding: 0;">
+            <li><a href="#section1">1</a></li>
+            <li><a href="#section2">2</a></li>
+            <li><a href="#section3">3</a></li>
+            <li><a href="#section4">4</a></li>
+        </ul>
+    </nav>
+
+    <!-- JavaScript for smooth scrolling (optional) -->
+    <script>
+        // Smooth scrolling when clicking navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Website Title</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        scroll-behavior: smooth; /* Enable smooth scrolling */
+    }
+
+    .section {
+        min-height: 100vh; /* Full viewport height for each section */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 3rem;
+    }
+
+    /* Define different background colors for each section */
+    #section1 {
+        background-color: #4CAF50; /* Green */
+    }
+
+    #section2 {
+        background-color: #2196F3; /* Blue */
+    }
+
+    #section3 {
+        background-color: #FF9800; /* Orange */
+    }
+
+    #section4 {
+        background-color: #9C27B0; /* Purple */
     }
 </style>
 </head>
