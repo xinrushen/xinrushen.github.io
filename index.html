@@ -20,6 +20,18 @@
         font-size: 3rem;
     }
 
+    .superlink {
+        color: #FF5733; /* Custom color for the link */
+        text-decoration: underline; /* Underline for link */
+        cursor: pointer; /* Cursor style */
+    }
+
+    .superlink:hover,
+    .superlink:focus {
+        text-decoration: none;
+        color: #E83F3A;
+    }
+
     /* Define different background colors for each section */
     #home {
         background-color: #B8B0D9;
@@ -49,26 +61,26 @@
 <body>
     <!-- Sections for your website -->
     <section class="section" id="home">
-        HOME
+        Home
     </section>
     
-    <section class="section" id="about">
+    <section class="section superlink" id="about">
         <a href="./about.html"><h2>About</h2></a>
     </section>
     
-    <section class="section" id="skills">
+    <section class="section superlink" id="skills">
         <a href="./skills.html"><h2>Skills</h2></a>
     </section>
     
-    <section class="section" id="hobbies">
+    <section class="section superlink" id="hobbies">
         <a href="./hobbies.html"><h2>Hobbies</h2></a>
     </section>
 
-    <section class="section" id="projects">
+    <section class="section superlink" id="projects">
         <a href="./projects.html"><h2>Projects</h2></a>
     </section>
     
-    <section class="section" id="publications">
+    <section class="section superlink" id="publications">
         <a href="./publications.html"><h2>Publications</h2></a>
     </section>
 
