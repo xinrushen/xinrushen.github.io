@@ -7,12 +7,15 @@
 <style>
     body {
         margin: 0;
-        font-family: Courier, Arial, Helvetica, sans-serif;
-        scroll-behavior: smooth; /* Enable smooth scrolling */
+        font-family: Arial, Helvetica, sans-serif;
+        scroll-snap-type: y mandatory;
+        overflow-y: scroll;
+        height: 100vh;
     }
 
     .section {
         min-height: 100vh; /* Full viewport height for each section */
+        scroll-snap-align: start;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -20,11 +23,11 @@
         font-size: 3rem;
     }
 
-    .superlink {
+/*     .superlink {
         color: #171717; /* Custom color for the link */
         text-decoration: none; /* no underline for link */
         cursor: pointer; /* Cursor style */
-    }
+    } */
     
     #home {
         background-color: #B8B0D9;
@@ -57,23 +60,23 @@
         Home
     </section>
     
-    <section class="section superlink" id="about">
+    <section class="section" id="about">
         <a href="./about.html"><h2>About</h2></a>
     </section>
     
-    <section class="section superlink" id="skills">
+    <section class="section" id="skills">
         <a href="./skills.html"><h2>Skills</h2></a>
     </section>
     
-    <section class="section superlink" id="hobbies">
+    <section class="section" id="hobbies">
         <a href="./hobbies.html"><h2>Hobbies</h2></a>
     </section>
 
-    <section class="section superlink" id="projects">
+    <section class="section" id="projects">
         <a href="./projects.html"><h2>Projects</h2></a>
     </section>
     
-    <section class="section superlink" id="publications">
+    <section class="section" id="publications">
         <a href="./publications.html"><h2>Publications</h2></a>
     </section>
 
