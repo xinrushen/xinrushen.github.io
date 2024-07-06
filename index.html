@@ -8,19 +8,22 @@
     body {
         margin: 0;
         font-family: Arial, Helvetica, sans-serif;
-        scroll-snap-type: y mandatory;
-        overflow-y: scroll;
-        height: 100vh;
     }
 
     .section {
         min-height: 100vh; /* Full viewport height for each section */
-        scroll-snap-align: center;
+        scroll-snap-align: start;
         display: flex;
         justify-content: center;
         align-items: center;
         color: #171717;
         font-size: 3rem;
+    }
+
+    .container {
+        scroll-snap-type: y mandatory;
+        overflow-y: scroll;
+        height: 100vh;
     }
     
     #home {
@@ -49,32 +52,32 @@
 </style>
 </head>
 <body>
-    <!-- Sections for the website -->
-    <section class="section" id="home">
+<div class="container">
+    <div class="section" id="home">
         Home
-    </section>
+    </div>
     
-    <section class="section" id="about">
+    <div class="section" id="about">
         <a href="./about.html"><h2>About</h2></a>
-    </section>
+    </div>
     
-    <section class="section" id="skills">
+    <div class="section" id="skills">
         <a href="./skills.html"><h2>Skills</h2></a>
-    </section>
+    </div>
     
-    <section class="section" id="hobbies">
+    <div class="section" id="hobbies">
         <a href="./hobbies.html"><h2>Hobbies</h2></a>
-    </section>
+    </div>
 
-    <section class="section" id="projects">
+    <div class="section" id="projects">
         <a href="./projects.html"><h2>Projects</h2></a>
-    </section>
+    </div>
     
-    <section class="section" id="publications">
+    <div class="section" id="publications">
         <a href="./publications.html"><h2>Publications</h2></a>
-    </section>
+    </div>
+</div>
 
-    <!-- Navigation links (optional) -->
     <nav style="position: fixed; top: 10px; right: 10px;">
         <ul style="list-style-type: none; padding: 0;">
             <li><a href="#home">Home</a></li>
@@ -85,8 +88,8 @@
             <li><a href="#publications">Publications</a></li>
         </ul>
     </nav>
+<!-- 
 
-    <!-- JavaScript for smooth scrolling (optional) -->
     <script>
         // Smooth scrolling when clicking navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -98,6 +101,6 @@
                 });
             });
         });
-    </script>
+    </script> -->
 </body>
 </html>
