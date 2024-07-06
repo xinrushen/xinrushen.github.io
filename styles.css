@@ -9,7 +9,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #ffffff;
+  background-color: #ffffff00;
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
@@ -35,7 +35,7 @@ body {
 .menu-icon .bar {
   width: 25px;
   height: 3px;
-  background-color: #ffffff;
+  background-color: #fff;
   margin: 4px 0;
   transition: transform 0.3s ease;
 }
@@ -78,7 +78,7 @@ body {
     position: absolute;
     top: 80px; /* Adjust top position to match navbar height */
     left: 0;
-    background-color: #ffffff;
+    background-color: #fff;
     width: 100%;
     padding: 10px 0;
   }
