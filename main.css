@@ -17,7 +17,7 @@ body{
     "YTUC" 712;
 }
 
-.section {
+section {
     min-height: 100vh;
     scroll-snap-align: start;
     display: flex;
@@ -27,7 +27,7 @@ body{
     font-size: 3rem;
 }
 
-.container {
+container {
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
     height: 100vh;
