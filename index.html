@@ -8,50 +8,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="main.css">
-<style>
-    .section {
-        min-height: 100vh; /* Full viewport height for each section */
-        scroll-snap-align: start;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #171717;
-        font-size: 3rem;
-    }
 
-    .container {
-        scroll-snap-type: y mandatory;
-        overflow-y: scroll;
-        height: 100vh;
-    }
-    
-    #home {
-        background-color: #B8B0D9;
-    }
-
-    #about {
-        background-color: #C5C5E3
-    }
-
-    #skills {
-        background-color: #B4B4CF
-    }
-
-    #hobbies {
-        background-color: #AAAAAA
-    }
-    
-    #projects {
-        background-color: #CCCCCC
-    }
-
-    #publications {
-        background-color: #BBBBBB
-    }
-</style>
 </head>
 <body>
-    <i class="fas fa-clock"></i>
     <div class="container">
         <div class="section" id="home">
             HOME
@@ -77,23 +36,6 @@
             <a href="./publications.html"><h2>PUBLICATIONS</h2></a>
         </div>
     </div>
-
-    <div class="navbar" id="navbar">
-        <div class="menu-icon" id="menuIcon">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </div>
-        <ul class="nav-links" id="navLinks">
-            <li><a href="#home">HOME</a></li>
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="#skills">SKILLS</a></li>
-            <li><a href="#hobbies">HOBBIES</a></li>
-            <li><a href="#projects">PROJECTS</a></li>
-            <li><a href="#publications">PUBLICATIONS</a></li>
-      </ul>
-    </div>
-    
     <script src="script.js"></script>
 </body>
 </html>
