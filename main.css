@@ -17,98 +17,42 @@ body{
     "YTUC" 712;
 }
 
-.navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #ffffff00;
-  padding: 10px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 1000; /* Ensure navbar is on top of other content */
-  transition: top 0.3s ease; /* Smooth transition for hiding/showing navbar */
+.section {
+    min-height: 100vh;
+    scroll-snap-align: start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #171717;
+    font-size: 3rem;
 }
 
-.navbar.sticky {
-  top: 50%;
-  transform: translateY(-50%);
-  flex-direction: column;
-  align-items: flex-start;
-  width: auto;
-  padding: 0 10px;
+.container {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
 }
 
-.menu-icon {
-  cursor: pointer;
-  display: none; /* Hidden by default on larger screens */
+#home {
+    background-color: #B8B0D9;
 }
 
-.menu-icon .bar {
-  width: 25px;
-  height: 3px;
-  background-color: #fff;
-  margin: 4px 0;
-  transition: transform 0.3s ease;
+#about {
+    background-color: #C5C5E3
 }
 
-.nav-links {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
+#skills {
+    background-color: #B4B4CF
 }
 
-.nav-links li {
-  margin-right: 20px;
+#hobbies {
+    background-color: #AAAAAA
 }
 
-.nav-links a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 18px;
-  transition: color 0.3s ease;
+#projects {
+    background-color: #CCCCCC
 }
 
-.nav-links a:hover {
-  color: #ffffff00;
-}
-
-.content {
-  padding: 20px;
-  margin-top: 80px; /* Ensure content starts below the navbar */
-}
-
-@media screen and (max-width: 768px) {
-  .menu-icon {
-    display: block; /* Show menu icon on smaller screens */
-  }
-  
-  .nav-links {
-    display: none; /* Hide nav links by default on smaller screens */
-    flex-direction: column;
-    position: absolute;
-    top: 80px; /* Adjust top position to match navbar height */
-    left: 0;
-    background-color: #fff;
-    width: 100%;
-    padding: 10px 0;
-  }
-  
-  .nav-links.active {
-    display: flex; /* Show nav links when active (menu icon clicked) */
-  }
-  
-  .menu-icon.active .bar:nth-child(1) {
-    transform: rotate(-45deg) translate(-5px, 6px);
-  }
-  
-  .menu-icon.active .bar:nth-child(2) {
-    opacity: 0;
-  }
-  
-  .menu-icon.active .bar:nth-child(3) {
-    transform: rotate(45deg) translate(-5px, -6px);
-  }
+#publications {
+    background-color: #BBBBBB
 }
