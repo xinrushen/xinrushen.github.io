@@ -38,6 +38,7 @@ html, body {
     text-align: center;
     align-items: center;
     scroll-snap-align: start; /* Snap each page to the top of the viewport */
+    padding: 20px;
 }
 
 /* Different background colors for each page */
