@@ -15,22 +15,25 @@ body{
     "YTFI" 738,
     "YTLC" 514,
     "YTUC" 712;
+  scroll-snap-type: y mandatory; /* Enable vertical scrolling with snap points */
+  overflow-y: scroll; /* Enable vertical scrolling */
 }
 
-.section {
-    min-height: 100vh;
-    scroll-snap-align: start;
+main {
+    height: 100vh; /* Full viewport height */
     display: flex;
+    flex-direction: column;
+}
+
+/* Page styles */
+.page {
+    height: 100vh; /* Each page takes full viewport height */
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #171717;
-    font-size: 3rem;
-}
-
-.container {
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
-    height: 100vh;
+    scroll-snap-align: start; /* Snap each page to the top of the viewport */
+    padding: 20px;
 }
 
 #home {
