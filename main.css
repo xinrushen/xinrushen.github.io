@@ -1,9 +1,5 @@
-/* Body styles */
-html, body {
-  height: 100%;
-  box-sizing: border-box;
-  scroll-snap-type: y mandatory; /* Enable vertical scrolling with snap points */
-  overflow-y: scroll; /* Enable vertical scrolling */
+body {
+  margin: 0;
   font-family: "Roboto Flex", sans-serif;
   font-optical-sizing: auto;
   font-weight: 100;
@@ -22,49 +18,42 @@ html, body {
     "YTUC" 712;
 }
 
-.container {
-    height: 100vh;
-    display: flex;
-    overflow-x: hidden;
-    scroll-snap-type: y mandatory;
-}
-
-/* Page styles */
-.page {
-    height: 100%; /* Each page takes full viewport height */
-    width: 100%;
+.section {
+    min-height: 100vh; /* Full viewport height for each section */
+    scroll-snap-align: start;
     display: flex;
     justify-content: center;
-    text-align: center;
     align-items: center;
-    scroll-snap-align: start; /* Snap each page to the top of the viewport */
+    color: #171717;
+    font-size: 3rem;
 }
 
-/* Different background colors for each page */
-#page1 {
-    background-color: #3498db; /* Blue */
-    color: #fff; /* White text for contrast */
+.container {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
 }
 
-#page2 {
-    background-color: #27ae60; /* Green */
-    color: #fff; /* White text for contrast */
+#home {
+    background-color: #B8B0D9;
 }
 
-#page3 {
-    background-color: #f39c12; /* Orange */
-    color: #fff; /* White text for contrast */
+#about {
+    background-color: #C5C5E3
 }
 
-/* Additional styling for content */
-.page h2 {
-    font-size: 2em;
-    margin-bottom: 10px;
+#skills {
+    background-color: #B4B4CF
 }
 
-.page p {
-    font-size: 1.2em;
-    text-align: center;
-    max-width: 600px;
-    line-height: 1.6;
+#hobbies {
+    background-color: #AAAAAA
+}
+
+#projects {
+    background-color: #CCCCCC
+}
+
+#publications {
+    background-color: #BBBBBB
 }
