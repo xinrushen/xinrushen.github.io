@@ -27,13 +27,6 @@ html, body {
   overflow-y: scroll; /* Enable vertical scrolling */
 }
 
-/* Main container styles */
-main {
-    height: 100%; /* Full viewport height */
-    display: flex;
-    flex-direction: column;
-}
-
 /* Page styles */
 .page {
     height: 100%; /* Each page takes full viewport height */
