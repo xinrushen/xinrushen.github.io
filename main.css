@@ -1,4 +1,12 @@
-body{
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
   font-family: "Roboto Flex", sans-serif;
   font-optical-sizing: auto;
   font-weight: 100;
@@ -19,6 +27,7 @@ body{
   overflow-y: scroll; /* Enable vertical scrolling */
 }
 
+/* Main container styles */
 main {
     height: 100vh; /* Full viewport height */
     display: flex;
@@ -36,26 +45,28 @@ main {
     padding: 20px;
 }
 
-#home {
-    background-color: #B8B0D9;
+/* Different background colors for each page */
+#page1 {
+    background-color: #f0f0f0; /* Light gray */
 }
 
-#about {
-    background-color: #C5C5E3
+#page2 {
+    background-color: #d3d3d3; /* Light gray */
 }
 
-#skills {
-    background-color: #B4B4CF
+#page3 {
+    background-color: #a9a9a9; /* Dark gray */
 }
 
-#hobbies {
-    background-color: #AAAAAA
+/* Additional styling for content */
+.page h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
 }
 
-#projects {
-    background-color: #CCCCCC
-}
-
-#publications {
-    background-color: #BBBBBB
+.page p {
+    font-size: 1.2em;
+    text-align: center;
+    max-width: 600px;
+    line-height: 1.6;
 }
