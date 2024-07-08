@@ -17,7 +17,7 @@ body{
     "YTUC" 712;
 }
 
-section {
+.section {
     min-height: 100vh;
     scroll-snap-align: start;
     display: flex;
