@@ -38,7 +38,6 @@ main {
 .page {
     height: 100vh; /* Each page takes full viewport height */
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     scroll-snap-align: start; /* Snap each page to the top of the viewport */
@@ -47,15 +46,18 @@ main {
 
 /* Different background colors for each page */
 #page1 {
-    background-color: #f0f0f0; /* Light gray */
+    background-color: #3498db; /* Blue */
+    color: #fff; /* White text for contrast */
 }
 
 #page2 {
-    background-color: #d3d3d3; /* Light gray */
+    background-color: #27ae60; /* Green */
+    color: #fff; /* White text for contrast */
 }
 
 #page3 {
-    background-color: #a9a9a9; /* Dark gray */
+    background-color: #f39c12; /* Orange */
+    color: #fff; /* White text for contrast */
 }
 
 /* Additional styling for content */
