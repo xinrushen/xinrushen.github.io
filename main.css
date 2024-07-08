@@ -1,7 +1,5 @@
 /* Body styles */
 html, body {
-  margin: 0;
-  padding: 0;
   height: 100%;
   box-sizing: border-box;
   scroll-snap-type: y mandatory; /* Enable vertical scrolling with snap points */
