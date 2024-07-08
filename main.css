@@ -1,12 +1,16 @@
 /* Reset default margin and padding */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
 }
 
 /* Body styles */
 html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  box-sizing: border-box;
+  scroll-snap-type: y mandatory; /* Enable vertical scrolling with snap points */
+  overflow-y: scroll; /* Enable vertical scrolling */
   font-family: "Roboto Flex", sans-serif;
   font-optical-sizing: auto;
   font-weight: 100;
@@ -23,13 +27,19 @@ html, body {
     "YTFI" 738,
     "YTLC" 514,
     "YTUC" 712;
-  scroll-snap-type: y mandatory; /* Enable vertical scrolling with snap points */
-  overflow-y: scroll; /* Enable vertical scrolling */
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    overflow-x: hidden;
+    scroll-snap-type: y mandatory;
 }
 
 /* Page styles */
 .page {
     height: 100%; /* Each page takes full viewport height */
+    width: 100%;
     display: flex;
     justify-content: center;
     text-align: center;
