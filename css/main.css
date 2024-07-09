@@ -50,32 +50,6 @@ body {
   }
 }
 
-.material-symbols-outlined {
-    font-size: 1em;
-    position: absolute;
-    cursor: pointer;
-}
-
-.icon_menu {
-    top: 5%;
-    left: 3%;
-}
-
-.icon_search {
-    top: 5%;
-    left: 6%;
-}
-
-.icon_translate {
-    top: 5%;
-    right: 6%;
-}
-
-.icon_dark_mode {
-    top: 5%;
-    right: 3%;
-}
-
 .sidenav {
   height: 100%;
   width: 0;
@@ -113,6 +87,32 @@ body {
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+}
+
+.material-symbols-outlined {
+    font-size: 1em;
+    position: absolute;
+    cursor: pointer;
+}
+
+.icon_menu {
+    top: 5%;
+    left: 3%;
+}
+
+.icon_search {
+    top: 5%;
+    left: 6%;
+}
+
+.icon_translate {
+    top: 5%;
+    right: 6%;
+}
+
+.icon_dark_mode {
+    top: 5%;
+    right: 3%;
 }
 
 #home {
