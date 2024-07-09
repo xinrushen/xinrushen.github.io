@@ -5,12 +5,6 @@ body {
   font-style: normal;
 }
 
-.container {
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
-    height: 100vh;
-}
-
 .section {
     min-height: 100vh; /* Full viewport height for each section */
     scroll-snap-align: start;
@@ -21,11 +15,17 @@ body {
     font-size: 3rem;
 }
 
+.container {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
 .material-symbols-outlined {
-    font-size: 2em;
+    font-size: 1.5em;
     position: absolute;
-    bottom: 0;
-    right: 0;
+    top: 0;
+    left: 0;
 }
 
 
