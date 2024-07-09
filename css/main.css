@@ -22,34 +22,29 @@ body {
 }
 
 .navbar {
+  top: 0;
   width: 100%;
+  display: flex;
+  position: absolute;
+  padding-top: 0.666em;
   background-color: #00000000;
+}
+
+.navbar > * {
+  padding-left: 0.666em;
+}
+
+.navbar > :last-child {
+  padding-right: 0.666em;
 }
 
 .material-symbols-outlined {
     font-size: 2em;
-    position: absolute;
     cursor: pointer;
 }
 
-.icon_menu {
-    top: 5%;
-    left: 3%;
-}
-
-.icon_search {
-    top: 5%;
-    left: 6%;
-}
-
-.icon_translate {
-    top: 5%;
-    right: 6%;
-}
-
-.icon_dark_mode {
-    top: 5%;
-    right: 3%;
+.ml-auto {
+    margin-left: auto;
 }
 
 #home {
