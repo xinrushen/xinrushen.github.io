@@ -24,8 +24,26 @@ body {
 .material-symbols-outlined {
     font-size: 1em;
     position: absolute;
-    top: 10px;
-    left: 10px;
+}
+
+.icon_menu {
+    top: 5%;
+    left: 5%;
+}
+
+.icon_search {
+    top: 5%;
+    left: 10%;
+}
+
+.icon_translate {
+    top: 5%;
+    right: 10%;
+}
+
+.icon_dark_mode {
+    top: 5%;
+    right: 5%;
 }
 
 #home {
