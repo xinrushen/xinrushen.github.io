@@ -23,11 +23,10 @@ body {
 
 .material-symbols-outlined {
     font-size: 1.5em;
-/*     position: absolute;
+    position: absolute;
     top: 0;
-    left: 0; */
+    left: 0;
 }
-
 
 #home {
     background-color: #AAAAAA;
