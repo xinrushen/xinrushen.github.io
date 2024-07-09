@@ -81,19 +81,6 @@ body {
   font-size: 36px;
 }
 
-.openbtn {
-  font-size: 20px;
-  cursor: pointer;
-  background-color: green;
-  color: pink;
-  padding: 10px 15px;
-  border: none;
-}
-
-.openbtn:hover {
-  background-color:yellow;
-}
-
 #home {
     background-color: #AAAAAA;
 }
