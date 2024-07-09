@@ -14,11 +14,24 @@
 <body>
     <div class="container">
         <div class="section" id="home">
-            <span class="material-symbols-outlined icon_menu">menu</span>
-            <span class="material-symbols-outlined icon_search">search</span>
-            <span class="material-symbols-outlined icon_translate">translate</span>
-            <span class="material-symbols-outlined icon_dark_mode">dark_mode</span>
+            <div class="material-symbols-outlined" onclick="toggleSidebar()">
+                <span class="material-symbols-outlined icon_menu">menu</span>
+                <span class="material-symbols-outlined icon_search">search</span>
+                <span class="material-symbols-outlined icon_translate">translate</span>
+                <span class="material-symbols-outlined icon_dark_mode">dark_mode</span>
+            </div>
         </div>
+
+        <div class="sidebar" id="sidebar">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">SKILLS</a></li>
+                <li><a href="#">HOBBIES</a></li>
+                <li><a href="#">PROJECTS</a></li>
+                <li><a href="#">PUBLICATIONS</a></li>
+                <li><a href="#">ABOUT</a></li>
+            </ul>
+        </div>    
         
         <div class="section" id="skills">
             <a href="html/skills.html"><h2>SKILLS</h2></a>
@@ -39,6 +52,9 @@
          <div class="section" id="about">
             <a href="html/about.html"><h2>ABOUT</h2></a>
         </div>
+
+        <script src="script.js"></script>
+        
     </div>
 </body>
 
