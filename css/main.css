@@ -28,7 +28,7 @@ body {
 
 .material-symbols-outlined {
     font-size: 2em;
-    position: absolute;
+    position: fix;
     cursor: pointer;
 }
 
