@@ -13,12 +13,22 @@
 
 <body>
     <navbar class="navbar">
-      <span class="material-symbols-outlined">menu</span>
+      <span class="material-symbols-outlined openbtn" onclick="openNav()">menu</span>
       <span class="material-symbols-outlined">search</span> 
       <span class="material-symbols-outlined ml-auto">translate</span>
       <span class="material-symbols-outlined">dark_mode</span>
     </navbar>
-   
+
+    <div id="mySidepanel" class="sidepanel">
+      <a href="javascript:void(0)" class="material-symbols-outlined closebtn" onclick="closeNav()">close</a>
+      <a href="#home">HOME</a>
+      <a href="#skills">SKILLS</a>
+      <a href="#hobbies">HOBBIES</a>
+      <a href="#projects">PROJECTS</a>
+      <a href="#publications">PUBLICATIONS</a>
+      <a href="#about">ABOUT</a>
+    </div>
+    
     <div class="container">
         <div class="section" id="home"></div>
         <div class="section" id="skills"><a href="html/skills.html"><h2>SKILLS</h2></a></div>
