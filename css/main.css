@@ -24,26 +24,27 @@ body {
 .material-symbols-outlined {
     font-size: 1em;
     position: absolute;
+    cursor: pointer;
 }
 
 .icon_menu {
-    top: 5%;
-    left: 3%;
+    top: 5vh;
+    left: 3vh;
 }
 
 .icon_search {
-    top: 5%;
-    left: 6%;
+    top: 5vh;
+    left: 6vh;
 }
 
 .icon_translate {
-    top: 5%;
-    right: 6%;
+    top: 5vh;
+    right: 6vh;
 }
 
 .icon_dark_mode {
-    top: 5%;
-    right: 3%;
+    top: 5vh;
+    right: 3vh;
 }
 
 #home {
