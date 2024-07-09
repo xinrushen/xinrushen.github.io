@@ -1,6 +1,5 @@
 function toggleSidebar() {
     var sidebar = document.getElementById('sidebar');
-    var content = document.querySelector('.content');
     
     if (sidebar.style.left === '-250px') {
         sidebar.style.left = '0';
