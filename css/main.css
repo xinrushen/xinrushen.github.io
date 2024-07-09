@@ -24,7 +24,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #171717;
+    color: #000000;
     font-size: 3rem;
 }
 
@@ -35,25 +35,25 @@ body {
 }
 
 #home {
-    background-color: #AFB8D9;
-}
-
-#about {
-    background-color: #BFBFDB;
-}
-
-#skills {
-    background-color: #B4B4CF;
-}
-
-#hobbies {
     background-color: #AAAAAA;
 }
 
-#projects {
+#skills {
+    background-color: #BBBBBB;
+}
+
+#hobbies {
     background-color: #CCCCCC;
 }
 
+#projects {
+    background-color: #DDDDDD;
+}
+
 #publications {
-    background-color: #BBBBBB;
+    background-color: #EEEEEE;
+}
+
+#about {
+    background-color: #FFFFFF;
 }
