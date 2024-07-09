@@ -1,11 +1,8 @@
 body {
   margin: 0;
-}
-
-.darker-grotesque-<uniquifier> {
   font-family: "Darker Grotesque", sans-serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: 300;
   font-style: normal;
 }
 
