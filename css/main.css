@@ -28,23 +28,23 @@ body {
 }
 
 .icon_menu {
-    top: 5vh;
-    left: 3vh;
+    top: 5%;
+    left: 3%;
 }
 
 .icon_search {
-    top: 5vh;
-    left: 6vh;
+    top: 5%;
+    left: 6%;
 }
 
 .icon_translate {
-    top: 5vh;
-    right: 6vh;
+    top: 5%;
+    right: 6%;
 }
 
 .icon_dark_mode {
-    top: 5vh;
-    right: 3vh;
+    top: 5%;
+    right: 3%;
 }
 
 .sidebar {
