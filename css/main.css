@@ -21,28 +21,33 @@ body {
     font-size: 3rem;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
 }
 
-li {
+.navbar a {
   float: left;
-}
-
-li a {
-  display: block;
+  padding: 12px;
   color: white;
-  text-align: center;
-  padding: 14px 16px;
   text-decoration: none;
+  font-size: 17px;
 }
 
-li a:hover {
-  background-color: #111;
+.navbar a:hover {
+  background-color: #000;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
 }
 
 .material-symbols-outlined {
