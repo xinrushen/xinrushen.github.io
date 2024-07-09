@@ -14,27 +14,23 @@
 <body>
     <div class="container">
         <div class="section" id="home">
-            <div class="material-symbols-outlined" onclick="toggleSidebar()">
-                <span class="material-symbols-outlined icon_menu">menu</span>
-            </div>
+            <div class="sidenav" id="mySidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;></a>
+                <a href="#home">HOME</a>
+                <a href="#skills">SKILLS</a>
+                <a href="#hobbies">HOBBIES</a>
+                <a href="#projects">PROJECTS</a>
+                <a href="#publications">PUBLICATIONS</a>
+                <a href="#about">ABOUT</a>
+            </div> 
+            <span class="material-symbols-outlined icon_menu" onclick="openNav()">menu</span>
             
-                <span class="material-symbols-outlined icon_search">search</span>
-            
-                <span class="material-symbols-outlined icon_translate">translate</span>
-            
-                <span class="material-symbols-outlined icon_dark_mode">dark_mode</span>
-        </div>
-
-        <div class="sidebar" id="sidebar">
-            <ul>
-                <li><a href="#home">HOME</a></li>
-                <li><a href="#skills">SKILLS</a></li>
-                <li><a href="#hobbies">HOBBIES</a></li>
-                <li><a href="#projects">PROJECTS</a></li>
-                <li><a href="#publications">PUBLICATIONS</a></li>
-                <li><a href="#about">ABOUT</a></li>
-            </ul>
-        </div>    
+            <span class="material-symbols-outlined icon_search">search</span>
+        
+            <span class="material-symbols-outlined icon_translate">translate</span>
+        
+            <span class="material-symbols-outlined icon_dark_mode">dark_mode</span>
+        </div>   
         
         <div class="section" id="skills">
             <a href="html/skills.html"><h2>SKILLS</h2></a>
