@@ -27,20 +27,20 @@ body {
   width: 100%;
   display: flex;
   position: absolute;
-  padding-top: 12pt;
+  padding-top: 14pt;
   background-color: #00000000;
 }
 
 .navbar > * {
-  padding-left: 12pt;
+  padding-left: 14pt;
 }
 
 .navbar > :last-child {
-  padding-right: 12pt;
+  padding-right: 14pt;
 }
 
 .material-symbols-outlined {
-    font-size: 3em;
+    font-size: 2.2em;
     cursor: pointer;
 }
 
