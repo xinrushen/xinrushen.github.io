@@ -77,8 +77,8 @@ body {
 .sidepanel .closebtn {
   position: absolute;
   top: 0;
-  right: 0.5em;
-  font-size: 25px;
+  right: 25px;
+  font-size: 35px;
 }
 
 #home {
