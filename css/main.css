@@ -71,7 +71,7 @@ body {
 }
 
 .sidepanel a:hover {
-  color: #00000000;
+  font-style: italic;
 }
 
 .sidepanel .closebtn {
