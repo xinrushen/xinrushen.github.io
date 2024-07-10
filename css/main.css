@@ -28,7 +28,7 @@ body {
   display: flex;
   position: absolute;
   padding-top: 14pt;
-  background-color: #000000;
+  background-color: #00000000;
 }
 
 .navbar > * {
@@ -65,7 +65,7 @@ body {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 30px;
-  color: #00000000;
+  color: white;
   display: block;
   transition: 0.3s;
 }
