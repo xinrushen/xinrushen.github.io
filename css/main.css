@@ -96,6 +96,11 @@ body {
   z-index: 1000;
 }
 
+.content {
+  font-size: 10px;
+  background-color: red;
+}
+
 #home {
     background-color: #AAAAAA;
 }
