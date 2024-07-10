@@ -15,6 +15,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+gsap.registerPlugin(ScrollTrigger);
+
 ScrollTrigger.create({
   animation: gsap.from(".logo", {
     y: "50vh",
