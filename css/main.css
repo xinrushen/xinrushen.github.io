@@ -81,6 +81,14 @@ body {
   font-size: 35px;
 }
 
+.fullname {
+  font-family: "Sirin Stencil", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 100px;
+  color: #363636;
+}
+
 #home {
     background-color: #AAAAAA;
 }
