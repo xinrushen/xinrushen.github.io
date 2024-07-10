@@ -89,8 +89,10 @@ body {
   font-family: Sirin Stencil, sans-serif;
   font-weight: 400;
   font-style: normal;
+  font-size: 5px;
   text-align: center;
   color: green;
+  padding: 0.5em;
   z-index: 1000;
 }
 
