@@ -15,8 +15,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-gsap.registerPlugin(ScrollTrigger);
-
 ScrollTrigger.create({
   animation: gsap.from(".logo", {
     y: "50vh",
@@ -24,8 +22,8 @@ ScrollTrigger.create({
     yPercent: -50,
   }),
   scrub: true,
-  trigger: ".content",
+  trigger: ".section skills",
   start: "top bottom",
-  endTrigger: ".content",
+  endTrigger: ".section skills",
   end: "top center",
 });
