@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    padding: 10px;
+    transition: padding 0.3s, background 0.3s;
+    z-index: 10;
+    text-align: center;
+}
+
+#logo {
+    font-size: 36px; /* Initial font size */
+    transition: font-size 0.3s;
+}
+
+.content {
+    height: 2000px; /* For demonstration, ensures there's enough content to scroll */
+    padding-top: 120px; /* Prevent content from hiding under fixed header */
+}
