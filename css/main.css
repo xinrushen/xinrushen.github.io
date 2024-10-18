@@ -81,7 +81,7 @@ body {
   font-size: 35px;
 }
 
-.logo {
+#logo {
   position: fixed;
   top: 0;
   left: 50%;
@@ -96,12 +96,6 @@ body {
   z-index: 1000;
   transition: font-size 0.3s;
 }
-
-#logo {
-    font-size: 36px; /* Initial font size */
-    transition: font-size 0.3s;
-}
-
 
 #home {
     background-color: #AAAAAA;
