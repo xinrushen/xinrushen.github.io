@@ -6,24 +6,17 @@ function closeNav() {
   document.getElementById("mySidepanel").style.width = "0";
 }
 
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-        });
-    });
-});
-
-ScrollTrigger.create({
-  animation: gsap.from(".logo", {
-    y: "50vh",
-    scale: 6,
-    yPercent: -50,
-  }),
-  scrub: true,
-  trigger: ".section skills",
-  start: "top bottom",
-  endTrigger: ".section skills",
-  end: "top center",
+window.addEventListener('scroll', () => {
+    const logo = document.getElementById('logo');
+    const navbar = document.querySelector('navbar');
+    
+    if (window.scrollY > 50) {
+        logo.style.fontSize = '14px'; // Shrink logo size
+        navbar.style.padding = '5px'; // Reduce header padding
+        navbar.style.background = 'transparent'; // Change background on scroll
+    } else {
+        logo.style.fontSize = '36px'; // Original logo size
+        navbar.style.padding = '10px'; // Original header padding
+        navbar.style.background = 'transparent'; // Reset background
+    }
 });
