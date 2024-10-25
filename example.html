@@ -3,26 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logo Shrink on Scrolling</title>
     <link rel="stylesheet" href="styles.css">
-    <title>Logo Shrink on Scroll</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
 </head>
 <body>
-    <header>
-        <div id="logo">My Logo</div>
-    </header>
-    <main>
-        <div class="content">
-            <h1>Scroll Down</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-            <p>Keep scrolling to see the effect...</p>
-            <p>More content here to enable scrolling...</p>
-            <p>More content here to enable scrolling...</p>
-            <p>More content here to enable scrolling...</p>
-            <p>More content here to enable scrolling...</p>
-            <p>More content here to enable scrolling...</p>
-            <p>More content here to enable scrolling...</p>
-        </div>
-    </main>
-    <script src="script.js"></script>
+  <div class="nav">
+    <div class="items-left">
+      <a href="#">services</a>
+      <a href="#">rooms</a>
+    </div>
+    <div class="items-right">
+      <a href="#">booking</a>
+      <a href="#">contact</a>
+    </div>
+  </div>
+  
+  <div class="logo-container">
+    <h1 class="logo">LOGO</h1>
+  </div>
+  
+  <div class="container"></div>
+  <div class="content">
+    <h1>Scroll Down for More Content</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <p>More content goes here...</p>
+    <p>More content goes here...</p>
+    <p>More content goes here...</p>
+    <p>More content goes here...</p>
+    <p>More content goes here...</p>
+    <p>More content goes here...</p>
+    <p>More content goes here...</p>
+    <p>More content goes here...</p>
+    <p>More content goes here...</p>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
