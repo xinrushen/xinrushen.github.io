@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="xinrushen">
+    <meta name="author" content="Xinru Shen">
     <title>Home</title>
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
@@ -21,13 +21,17 @@
 </head>
 
 <body>
-    <navbar class="navbar">
-      <span class="material-symbols-outlined" onclick="openNav()">menu</span>
-      <span class="material-symbols-outlined">search</span>
-      <h1 class="logo">XINRU SHEN</h1>
-      <span class="material-symbols-outlined ml-auto">translate</span>
-      <span class="material-symbols-outlined">dark_mode</span>
-    </navbar>
+    <div class="navbar">
+      <div class="items-left">
+        <span class="material-symbols-outlined" onclick="openNav()">menu</span>
+        <span class="material-symbols-outlined">search</span>
+      </div>
+
+      <div class="items-right">
+        <span class="material-symbols-outlined ml-auto">translate</span>
+        <span class="material-symbols-outlined">dark_mode</span>
+      </div>
+    </div>
 
     <div id="mySidepanel" class="sidepanel">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
@@ -38,10 +42,14 @@
       <a href="#projects">Projects</a>
       <a href="#publications">Publications</a>
     </div>
-    
-    <div class="container">
-        <div class="section" id="home"></div>
 
+    <div class="logo-container">
+      <h1 class="logo">Xinru Shen</h1>
+    </div>
+
+    <div class="container"></div>
+    
+    <div class="content">
         <div class="section" id="about"><a href="html/about.html"><h2>About</h2></a></div>
         
         <div class="section" id="skills"><a href="html/skills.html"><h2>Skills</h2></a></div>
