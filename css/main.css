@@ -1,10 +1,15 @@
-* {
+body {
   margin: 0;
   font-family: "Figtree", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  box-sizing: border-box; 
+}
+
+.container {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
 }
 
 .section {
@@ -18,15 +23,29 @@
 }
 
 .navbar {
-  position: fixed;
+  top: 0;
   width: 100%;
-  height: 100px;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 4em;
-  background: #fff;
-  z-index: 999;
+  position: absolute;
+  padding-top: 14pt;
+  background-color: #00000000;
+}
+
+.navbar > * {
+  padding-left: 25pt;
+}
+
+.navbar > :last-child {
+  padding-right: 25pt;
+}
+
+.material-symbols-outlined {
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.ml-auto {
+    margin-left: auto;
 }
 
 .sidepanel  {
@@ -64,42 +83,39 @@
 
 .logo {
   position: fixed;
-  font-family: Sirin Stencil, sans-serif;
-  color: #363636;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  font-family: "Tahoma";
-  padding: 1em;
+  font-family: Sirin Stencil, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  text-align: center;
+  color: #363636;
+  padding-left: 0pt;
   z-index: 1000;
-}
-
-.container {
-  width: 100%;
-  height: 100vh;
-  background: #fff;
 }
 
 #home {
     background-color: #AAAAAA;
 }
 
-#about {
+#skills {
     background-color: #BBBBBB;
 }
 
-#skills {
+#hobbies {
     background-color: #CCCCCC;
 }
 
-#hobbies {
+#projects {
     background-color: #DDDDDD;
 }
 
-#projects {
+#publications {
     background-color: #EEEEEE;
 }
 
-#publications {
+#about {
     background-color: #FFFFFF;
 }
