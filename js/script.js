@@ -5,9 +5,9 @@ ScrollTrigger.create({
     yPercent: -50,
   }),
   scrub: true,
-  trigger: ".content",
+  trigger: "#about",
   start: "top bottom",
-  endTrigger: ".content",
+  endTrigger: "#about",
   end: "top center",
 });
 
