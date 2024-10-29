@@ -85,31 +85,14 @@ body {
   font-family: "Sirin Stencil", sans-serif;
   font-weight: 400;
   font-style: normal;
-  color: #000000;
+  color: #363636;
   padding: 0.5em;
   z-index: 999;
 }
 
-#home {
-  background-color: #AAAAAA;
-}
-
-#about {
-  background-color: #BBBBBB;
-}
-
-#skills {
-  background-color: #CCCCCC;
-}
-
-#hobbies {
-  background-color: #DDDDDD;
-}
-
-#projects {
-  background-color: #EEEEEE;
-}
-
-#publications {
-  background-color: #FFFFFF;
-}
+#home {background-color: #AAAAAA;}
+#about {background-color: #BBBBBB;}
+#skills {background-color: #CCCCCC;}
+#hobbies {background-color: #DDDDDD;}
+#projects {background-color: #EEEEEE;}
+#publications {background-color: #FFFFFF;}
