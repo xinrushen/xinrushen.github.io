@@ -99,7 +99,7 @@ body {
   background-color: #AAAAAA;
 }
 
-.section .content {
+#content {
   background-color: #BBBBBB;
   width: 100%;
   height: 100vh;
