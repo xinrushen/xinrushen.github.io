@@ -22,8 +22,8 @@ ScrollTrigger.create({
     yPercent: -50,
   }),
   scrub: true,
-  trigger: ".section skills",
+  trigger: ".content",
   start: "top bottom",
-  endTrigger: ".section skills",
+  endTrigger: ".content",
   end: "top center",
 });
