@@ -26,7 +26,7 @@ body {
   top: 0;
   width: 100%;
   display: flex;
-  position: absolute;
+  position: fixed;
   padding-top: 14pt;
   background-color: #00000000;
   z-index: 999;
