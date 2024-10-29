@@ -1,13 +1,13 @@
 ScrollTrigger.create({
-  animation: gsap.from("#logo", {
+  animation: gsap.from(".logo", {
     y: "50vh",
     scale: 6,
     yPercent: -50,
   }),
   scrub: true,
-  trigger: ".section .content",
+  trigger: "#content",
   start: "top bottom",
-  endTrigger: ".section .content",
+  endTrigger: "#content",
   end: "top center",
 });
 
