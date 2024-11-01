@@ -1,3 +1,4 @@
+// Logo Varying Size While Scrolling
 ScrollTrigger.create({
   animation: gsap.from(".logo", {
     y: "50vh",
@@ -11,14 +12,17 @@ ScrollTrigger.create({
   end: "top center",
 });
 
+// Function to Open the Sidepanel
 function openNav() {
-  document.getElementById("mySidepanel").style.width = "250px";
+  document.getElementById("sidepanel").style.width = "250px";
 }
 
+// Function to Close the Sidepanel
 function closeNav() {
-  document.getElementById("mySidepanel").style.width = "0";
+  document.getElementById("sidepanel").style.width = "0";
 }
 
+// Smooth the page transition while clicking on the items on the sidepanel
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
@@ -28,6 +32,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+// Smooth the page transition while using keyboard input (up/down arrow)
 const sections = document.querySelectorAll('.section');
     let currentSection = 0;
 
@@ -46,18 +51,28 @@ const sections = document.querySelectorAll('.section');
         }
     });
 
-const toggleButton = document.getElementById('darkMode');
+// Dark Mode
+const clickButton = document.getElementById("dark-mode")
+const sysPref = window.matchMedia("(prefers-color-scheme: dark)");
+const setTheme = (darkMode) => {
+    if (darkMode) {
+      document.body.classList.add('dark-mode');
+    } else {
+      document.body.classList.remove('dark-mode');
+    }
+};
 
-const currentTheme = localStorage.getItem('theme');
-if (currentTheme === 'dark') {
-    document.body.classList.add('dark-mode');
+setTheme(sysPref.matches);
+clickButton.addEventListener('click', () => {
+    const isDarkMode = document.body.classList.toggle('dark-mode');
+    localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+});
+
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme) {
+    setTheme(savedTheme === 'dark');
 }
 
-toggleButton.addEventListener('click', () => {
-    document.body.classList.toggle('dark-mode');
-    if (document.body.classList.contains('dark-mode')) {
-        localStorage.setItem('theme', 'dark');
-    } else {
-        localStorage.setItem('theme', 'light');
-    }
+sysPref.addEventListener('change', (e) => {
+    setTheme(e.matches);
 });
