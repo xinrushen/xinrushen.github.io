@@ -50,29 +50,3 @@ const sections = document.querySelectorAll('.section');
             scrollToSection(currentSection - 1);
         }
     });
-
-// Dark Mode
-const clickButton = document.getElementById("dark-mode")
-const sysPref = window.matchMedia("(prefers-color-scheme: dark)");
-const setTheme = (darkMode) => {
-    if (darkMode) {
-      document.body.classList.add('dark-mode');
-    } else {
-      document.body.classList.remove('dark-mode');
-    }
-};
-
-setTheme(sysPref.matches);
-clickButton.addEventListener('click', () => {
-    const isDarkMode = document.body.classList.toggle('dark-mode');
-    localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
-});
-
-const savedTheme = localStorage.getItem('theme');
-if (savedTheme) {
-    setTheme(savedTheme === 'dark');
-}
-
-sysPref.addEventListener('change', (e) => {
-    setTheme(e.matches);
-});

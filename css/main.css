@@ -5,13 +5,6 @@ body {
   font-weight: 400;
   font-style: normal;
   background-color: #AAAAAA;
-  color: #363636;
-  transition: background-color 0.1s, color 0.1s;
-}
-
-body.dark-mode {
-  background-color: #363636;
-  color: #EEEEEE
 }
 
 .section {
