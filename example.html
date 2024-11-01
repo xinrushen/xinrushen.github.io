@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark/Light Mode Example</title>
+    <style>
+        /* Default light mode styles */
+        body {
+            background-color: white;
+            color: black;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        /* Dark mode styles */
+        body.dark-mode {
+            background-color: black;
+            color: white;
+        }
+
+        /* Button styles */
+        #theme-toggle {
+            padding: 10px 15px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello, World!</h1>
+    <button id="theme-toggle">Toggle Theme</button>
+
+    <script>
+        const toggleButton = document.getElementById('theme-toggle');
+
+        // Apply the user's preference on page load
+        const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+
+        // Function to set the theme based on preference
+        const setTheme = (darkMode) => {
+            if (darkMode) {
+                document.body.classList.add('dark-mode');
+            } else {
+                document.body.classList.remove('dark-mode');
+            }
+        };
+
+        // Set initial theme
+        setTheme(prefersDarkScheme.matches);
+
+        // Toggle dark mode on button click
+        toggleButton.addEventListener('click', () => {
+            const isDarkMode = document.body.classList.toggle('dark-mode');
+            // Store preference in localStorage
+            localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+        });
+
+        // Check localStorage for saved theme preference
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+            setTheme(savedTheme === 'dark');
+        }
+
+        // Update the theme when the user changes their system preference
+        prefersDarkScheme.addEventListener('change', (e) => {
+            setTheme(e.matches);
+        });
+    </script>
+</body>
+</html>
