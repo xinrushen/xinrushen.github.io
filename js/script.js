@@ -28,7 +28,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-new fullpage('#fullpage', {
-  autoScrolling: true,
-  navigation: true,
+document.addEventListener('keydown', function(event) {
+  if (event.key === 'ArrowDown') {
+      scrollToSection(currentSection + 1);
+  } else if (event.key === 'ArrowUp') {
+      scrollToSection(currentSection - 1);
+  }
 });
