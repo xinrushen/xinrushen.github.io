@@ -27,3 +27,18 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+document.addEventListener('keydown', function(event) {
+  const viewportHeight = window.innerHeight;
+  if (event.key === 'ArrowDown') {
+      window.scrollBy({
+          top: viewportHeight,
+          behavior: 'smooth'
+      });
+  } else if (event.key === 'ArrowUp') {
+      window.scrollBy({
+          top: -viewportHeight,
+          behavior: 'smooth'
+      });
+  }
+});
