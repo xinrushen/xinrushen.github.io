@@ -28,10 +28,20 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-document.addEventListener('keydown', function(event) {
-  if (event.key === 'ArrowDown') {
-      scrollToSection(currentSection + 1);
-  } else if (event.key === 'ArrowUp') {
-      scrollToSection(currentSection - 1);
-  }
-});
+const sections = document.querySelectorAll('.section');
+    let currentSection = 0;
+
+    function scrollToSection(index) {
+        if (index >= 0 && index < sections.length) {
+            sections[index].scrollIntoView({ behavior: 'smooth' });
+            currentSection = index;
+        }
+    }
+
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'ArrowDown') {
+            scrollToSection(currentSection + 1);
+        } else if (event.key === 'ArrowUp') {
+            scrollToSection(currentSection - 1);
+        }
+    });
