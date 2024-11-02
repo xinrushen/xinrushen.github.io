@@ -33,12 +33,12 @@ function closeSearch() {
 }
 
 // Function to Open the Languagepanel
-function openSearch() {
+function openLang() {
   document.getElementById("langpanel").style.width = "250px";
 }
 
 // Function to Close the Languagepanel
-function closeSearch() {
+function closeLang() {
   document.getElementById("langpanel").style.width = "0";
 }
 
