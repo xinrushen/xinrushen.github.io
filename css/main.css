@@ -23,6 +23,10 @@ body {
     padding: 0 4em;
 }
 
+.dark-mode .section {
+  color: #EEEEEE
+}
+
 .navbar {
   top: 0;
   width: 100%;
@@ -70,7 +74,6 @@ body {
 
 .dark-mode .sidepanel {
   background-color: #AAAAAA;
-  color: #363636;
 }
 
 .sidepanel a {
@@ -80,6 +83,10 @@ body {
   color: #EEEEEE;
   display: block;
   transition: 0.3s;
+}
+
+.dark-mode .sidepanel a {
+  color: #363636;
 }
 
 .sidepanel a:hover {
@@ -104,4 +111,8 @@ body {
   color: #363636;
   padding: 0.5em;
   z-index: 999;
+}
+
+.dark-mode .logo {
+  color: #EEEEEE;
 }

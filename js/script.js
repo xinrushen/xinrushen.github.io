@@ -57,8 +57,8 @@ const toggleIcon = document.getElementById('dark-mode');
 toggleIcon.addEventListener('click', () => {
     document.body.classList.toggle('dark-mode');
     if (document.body.classList.contains('dark-mode')) {
-        toggleIcon.textContent = 'light-mode';
+        toggleIcon.textContent = 'light_mode';
     } else {
-        toggleIcon.textContent = 'dark-mode';
+        toggleIcon.textContent = 'dark_mode';
     }
 });
