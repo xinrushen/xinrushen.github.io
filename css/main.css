@@ -117,7 +117,7 @@ body {
   background-color: #AAAAAA;
 }
 
-.searchpanel p {
+.searchpanel a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
@@ -126,11 +126,11 @@ body {
   transition: 0.3s;
 }
 
-.dark-mode .searchpanel p {
+.dark-mode .searchpanel a {
   color: #363636;
 }
 
-.searchpanel p:hover {
+.searchpanel a:hover {
   font-style: italic;
 }
 
