@@ -32,6 +32,16 @@ function closeSearch() {
   document.getElementById("searchpanel").style.width = "0";
 }
 
+// Function to Open the Languagepanel
+function openSearch() {
+  document.getElementById("langpanel").style.width = "250px";
+}
+
+// Function to Close the Languagepanel
+function closeSearch() {
+  document.getElementById("langpanel").style.width = "0";
+}
+
 // Smooth the page transition while clicking on the items on the sidepanel
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
