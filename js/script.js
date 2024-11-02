@@ -54,11 +54,18 @@ const sections = document.querySelectorAll('.section');
 // Dark Mode
 const toggleIcon = document.getElementById('dark-mode');
 
+if (localStorage.getItem('dark-mode') === 'enabled') {
+    document.body.classList.add('dark-mode');
+    toggleIcon.textContent = 'light_mode';
+}
+
 toggleIcon.addEventListener('click', () => {
     document.body.classList.toggle('dark-mode');
     if (document.body.classList.contains('dark-mode')) {
+        localStorage.setItem('dark-mode', 'enabled');
         toggleIcon.textContent = 'light_mode';
     } else {
+        localStorage.setItem('dark-mode', 'disabled');
         toggleIcon.textContent = 'dark_mode';
     }
 });
