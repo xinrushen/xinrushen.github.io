@@ -14,12 +14,22 @@ ScrollTrigger.create({
 
 // Function to Open the Sidepanel
 function openNav() {
-  document.getElementsByClassName("sidepanel").style.width = "250px";
+  document.getElementById("sidepanel").style.width = "250px";
 }
 
 // Function to Close the Sidepanel
 function closeNav() {
-  document.getElementsByClassName("sidepanel").style.width = "0";
+  document.getElementById("sidepanel").style.width = "0";
+}
+
+// Function to Open the Searchpanel
+function openSearch() {
+  document.getElementById("searchpanel").style.width = "250px";
+}
+
+// Function to Close the Searchpanel
+function closeSearch() {
+  document.getElementById("searchpanel").style.width = "0";
 }
 
 // Smooth the page transition while clicking on the items on the sidepanel

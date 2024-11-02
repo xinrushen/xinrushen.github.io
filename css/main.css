@@ -100,6 +100,47 @@ body {
   font-size: 35px;
 }
 
+.searchpanel  {
+  width: 0;
+  position: fixed;
+  z-index: 1000;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: #363636;
+  overflow-x: hidden;
+  transition: 0.6s;
+  padding-top: 65px;
+}
+
+.dark-mode .searchpanel {
+  background-color: #AAAAAA;
+}
+
+.searchpanel p {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #EEEEEE;
+  display: block;
+  transition: 0.3s;
+}
+
+.dark-mode .searchpanel p {
+  color: #363636;
+}
+
+.searchpanel p:hover {
+  font-style: italic;
+}
+
+.searchpanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 35px;
+}
+
 .logo {
   position: fixed;
   top: 0;
