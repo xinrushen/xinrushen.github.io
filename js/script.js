@@ -14,12 +14,12 @@ ScrollTrigger.create({
 
 // Function to Open the Sidepanel
 function openNav() {
-  document.getElementById("sidepanel").style.width = "250px";
+  document.getElementsByClassName("sidepanel").style.width = "250px";
 }
 
 // Function to Close the Sidepanel
 function closeNav() {
-  document.getElementById("sidepanel").style.width = "0";
+  document.getElementsByClassName("sidepanel").style.width = "0";
 }
 
 // Smooth the page transition while clicking on the items on the sidepanel

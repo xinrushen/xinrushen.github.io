@@ -22,7 +22,7 @@
 <body>
   <div class="navbar">
     <span class="material-symbols-outlined" onclick="openNav()">menu</span>
-    <span class="material-symbols-outlined">search</span>
+    <span class="material-symbols-outlined" onclick="openNav()">search</span>
     <span class="material-symbols-outlined ml-auto">translate</span>
     <span class="material-symbols-outlined" id="dark-mode">dark_mode</span>
   </div>
@@ -35,6 +35,11 @@
     <a href="#hobbies">Hobbies</a>
     <a href="#projects">Projects</a>
     <a href="#publications">Publications</a>
+  </div>
+
+  <div id="searchpanel" class="searchpanel">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <p>search starts here...</p>
   </div>
   
   <div class="logo-container">
