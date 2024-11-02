@@ -50,3 +50,15 @@ const sections = document.querySelectorAll('.section');
             scrollToSection(currentSection - 1);
         }
     });
+
+// Dark Mode
+const toggleIcon = document.getElementById('dark-mode');
+
+toggleIcon.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+    if (document.body.classList.contains('dark-mode')) {
+        toggleIcon.textContent = 'light-mode';
+    } else {
+        toggleIcon.textContent = 'dark-mode';
+    }
+});

@@ -7,6 +7,11 @@ body {
   background-color: #AAAAAA;
 }
 
+.dark-mode {
+  background-color: #363636;
+  color: #EEEEEE
+}
+
 .section {
     min-height: 100vh;
     scroll-snap-align: start;
@@ -27,6 +32,10 @@ body {
   padding-top: 2.9em;
   background-color: #AAAAAA;
   z-index: 999;
+}
+
+.dark-mode .navbar {
+  background-color: #363636;
 }
 
 .navbar > * {
@@ -57,6 +66,11 @@ body {
   overflow-x: hidden;
   transition: 0.6s;
   padding-top: 65px;
+}
+
+.dark-mode .sidepanel {
+  background-color: #AAAAAA;
+  color: #363636;
 }
 
 .sidepanel a {
