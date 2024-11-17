@@ -5,11 +5,41 @@ body {
   font-weight: 400;
   font-style: normal;
   background-color: #AAAAAA;
+  overflow-x: hidden;
 }
 
 .dark-mode {
   background-color: #363636;
   color: #EEEEEE
+}
+
+.shape {
+  position: absolute;
+  transition: transform 1s ease-out;
+}
+
+#rect1 {
+  top: 15vh;
+  left: 20vh;
+  width: 25vw;
+  height: 20vh;
+  background-color:#BBBBBB;
+}
+
+#rect2 {
+  top: 15vh;
+  right: 20vh;
+  width: 55.1vw;
+  height: 70vh;
+  background-color: #CCCCCC;
+}
+
+#rect3 {
+  top: 35.5vh;
+  left: 20vh;
+  width: 25vw;
+  height: 49.5vh;
+  background-color: #DDDDDD;
 }
 
 .section {
