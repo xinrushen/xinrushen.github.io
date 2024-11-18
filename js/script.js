@@ -48,18 +48,18 @@ function closeLang() {
 
 
 
-// Close the side panel if clicked outside of it
-document.addEventListener('click', (event) => {
-  // If the click is outside the sidepanel and the toggle button, close the panel
-  if (!sidePanel.contains(event.target) && !toggleBtn.contains(event.target)) {
-      sidePanel.classList.remove('open');
-  }
-});
+// // Close the side panel if clicked outside of it
+// document.addEventListener('click', (event) => {
+//   // If the click is outside the sidepanel and the toggle button, close the panel
+//   if (!sidePanel.contains(event.target) && !toggleBtn.contains(event.target)) {
+//       sidePanel.classList.remove('open');
+//   }
+// });
 
-// Prevent the click event from propagating inside the side panel (so it won't close)
-sidePanel.addEventListener('click', (event) => {
-  event.stopPropagation();
-});
+// // Prevent the click event from propagating inside the side panel (so it won't close)
+// sidePanel.addEventListener('click', (event) => {
+//   event.stopPropagation();
+// });
 
 // Smooth the page transition while clicking on the items on the sidepanel
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
