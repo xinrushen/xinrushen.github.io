@@ -12,9 +12,9 @@ ScrollTrigger.create({
   end: "top center",
 });
 
-const sidePanel = document.getElementById('sidepanel');
-const sidePanel = document.getElementById('sidepanel');
-const sidePanel = document.getElementById('sidepanel');
+// const sidePanel = document.getElementById('sidepanel');
+// const sidePanel = document.getElementById('sidepanel');
+// const sidePanel = document.getElementById('sidepanel');
 
 // Function to Open the Sidepanel
 function openNav() {
