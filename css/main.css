@@ -1,60 +1,10 @@
 body {
   margin: 0;
-  font-family: "Figtree", sans-serif;
+  font-family: "Jost", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  background-color: #AAAAAA;
-  overflow-x: hidden;
-}
-
-.dark-mode {
-  background-color: #363636;
-  color: #EEEEEE
-}
-
-.shape {
-  position: absolute;
-  transition: transform 1s ease-out;
-}
-
-#rect1 {
-  top: 15vh;
-  left: 20vh;
-  width: 25vw;
-  height: 20vh;
-  background-color:#BBBBBB;
-}
-
-#rect2 {
-  top: 15vh;
-  right: 20vh;
-  width: 55.1vw;
-  height: 70vh;
-  background-color: #CCCCCC;
-}
-
-#rect3 {
-  top: 35.5vh;
-  left: 20vh;
-  width: 25vw;
-  height: 49.5vh;
-  background-color: #DDDDDD;
-}
-
-.section {
-    min-height: 100vh;
-    scroll-snap-align: start;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #363636;
-    font-size: 3rem;
-    padding: 0 4em;
-}
-
-.dark-mode .section {
-  color: #EEEEEE
+  font-weight: 300;
+  font-style: light;
+  background-color: #182913;
 }
 
 .navbar {
@@ -63,30 +13,27 @@ body {
   height: 10vh;
   display: flex;
   position: fixed;
-  padding-top: 2.9em;
-  background-color: #AAAAAA;
+  padding-top: 3em;
+  background-color: #182913;
   z-index: 999;
 }
 
-.dark-mode .navbar {
-  background-color: #363636;
-}
-
 .navbar > * {
-  padding-left: 40pt;
+  padding-left: 45pt;
 }
 
 .navbar > :last-child {
-  padding-right: 40pt;
+  padding-right: 45pt;
 }
 
 .material-symbols-outlined {
-    font-size: 2em;
-    cursor: pointer;
+  color: #CBADC1;
+  font-size: 2.5em;
+  cursor: pointer;
 }
 
 .ml-auto {
-    margin-left: auto;
+  margin-left: auto;
 }
 
 .sidepanel  {
@@ -96,27 +43,19 @@ body {
   height: 100vh;
   top: 0;
   left: 0;
-  background-color: #363636;
+  background-color: #A990A1;
   overflow-x: hidden;
   transition: 0.6s;
-  padding-top: 65px;
-}
-
-.dark-mode .sidepanel {
-  background-color: #AAAAAA;
+  padding-top: 70px;
 }
 
 .sidepanel a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
-  color: #EEEEEE;
+  font-size: 30px;
+  color: #182913;
   display: block;
   transition: 0.3s;
-}
-
-.dark-mode .sidepanel a {
-  color: #363636;
 }
 
 .sidepanel a:hover {
@@ -127,7 +66,7 @@ body {
   position: absolute;
   top: 0;
   right: 25px;
-  font-size: 35px;
+  font-size: 40px;
 }
 
 .searchpanel  {
@@ -137,27 +76,19 @@ body {
   height: 100vh;
   top: 0;
   left: 0;
-  background-color: #363636;
+  background-color: #A990A1;
   overflow-x: hidden;
   transition: 0.6s;
-  padding-top: 65px;
-}
-
-.dark-mode .searchpanel {
-  background-color: #AAAAAA;
+  padding-top: 70px;
 }
 
 .searchpanel a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
-  color: #EEEEEE;
+  font-size: 30px;
+  color: #182913;
   display: block;
   transition: 0.3s;
-}
-
-.dark-mode .searchpanel a {
-  color: #363636;
 }
 
 .searchpanel a:hover {
@@ -168,10 +99,9 @@ body {
   position: absolute;
   top: 0;
   right: 25px;
-  font-size: 35px;
+  font-size: 40px;
 }
 
-/*divider starts*/
 .langpanel  {
   width: 0;
   position: fixed;
@@ -179,27 +109,19 @@ body {
   height: 100vh;
   top: 0;
   right: 0;
-  background-color: #363636;
+  background-color: #A990A1;
   overflow-x: hidden;
   transition: 0.6s;
-  padding-top: 65px;
-}
-
-.dark-mode .langpanel {
-  background-color: #AAAAAA;
+  padding-top: 70px;
 }
 
 .langpanel a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
-  color: #EEEEEE;
+  font-size: 30px;
+  color: #182913;
   display: block;
   transition: 0.3s;
-}
-
-.dark-mode .langpanel a {
-  color: #363636;
 }
 
 .langpanel a:hover {
@@ -210,9 +132,8 @@ body {
   position: absolute;
   top: 0;
   right: 25px;
-  font-size: 35px;
+  font-size: 40px;
 }
-/*divider ends*/
 
 .logo {
   position: fixed;
@@ -222,11 +143,84 @@ body {
   font-family: "Sirin Stencil", sans-serif;
   font-weight: 400;
   font-style: normal;
-  color: #363636;
+  color: #CBADC1;
   padding: 0.5em;
   z-index: 999;
 }
 
-.dark-mode .logo {
-  color: #EEEEEE;
+
+
+.section {
+  min-height: 100vh;
+  scroll-snap-align: start;
+  display: flex;
+  color: #CBADC1;
+  font-size: 3rem;
+  padding: 0 1em;
+}
+
+
+
+
+
+.left-textbox {
+  font-weight: 900;
+  font-style: italic;
+  font-size: 5em;
+}
+
+#top {
+  padding-top: 10vh;
+  padding-left: 10vh;
+}
+
+
+
+
+
+
+
+.light_mode {
+  background-color: #A990A1;
+  color: #182913;
+}
+
+.light_mode .navbar {
+  background-color: #A990A1;
+}
+
+.light_mode .material-symbols-outlined {
+  color: #182913;
+}
+
+.light_mode .sidepanel {
+  background-color: #182913;
+}
+
+.light_mode .sidepanel a {
+  color: #CBADC1;
+}
+
+.light_mode .searchpanel {
+  background-color: #182913;
+}
+
+.light_mode .searchpanel a {
+  color: #CBADC1;
+}
+
+.light_mode .langpanel {
+  background-color: #182913;
+}
+
+.light_mode .langpanel a {
+  color: #CBADC1;
+}
+
+.light_mode .logo {
+  color: #182913;
+}
+
+.light_mode .section {
+  color: #182913;
 }

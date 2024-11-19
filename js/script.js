@@ -1,7 +1,8 @@
 // Logo Varying Size While Scrolling
 ScrollTrigger.create({
   animation: gsap.from(".logo", {
-    y: "50vh",
+    x: "12vw",
+    y: "65vh",
     scale: 6,
     yPercent: -50,
   }),
@@ -90,22 +91,22 @@ const sections = document.querySelectorAll('.section');
         }
     });
 
-// Dark Mode
-const toggleIcon = document.getElementById('dark-mode');
+// Light Mode
+const toggleIcon = document.getElementById('light_mode');
 
-if (localStorage.getItem('dark-mode') === 'enabled') {
-    document.body.classList.add('dark-mode');
-    toggleIcon.textContent = 'light_mode';
+if (localStorage.getItem('light_mode') === 'enabled') {
+    document.body.classList.add('light_mode');
+    toggleIcon.textContent = 'dark_mode';
 }
 
 toggleIcon.addEventListener('click', () => {
-    document.body.classList.toggle('dark-mode');
-    if (document.body.classList.contains('dark-mode')) {
-        localStorage.setItem('dark-mode', 'enabled');
-        toggleIcon.textContent = 'light_mode';
-    } else {
-        localStorage.setItem('dark-mode', 'disabled');
+    document.body.classList.toggle('light_mode');
+    if (document.body.classList.contains('light_mode')) {
+        localStorage.setItem('light_mode', 'enabled');
         toggleIcon.textContent = 'dark_mode';
+    } else {
+        localStorage.setItem('light_mode', 'disabled');
+        toggleIcon.textContent = 'light_mode';
     }
 });
 
