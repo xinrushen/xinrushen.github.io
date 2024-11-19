@@ -1,8 +1,8 @@
 // Logo Varying Size While Scrolling
 ScrollTrigger.create({
   animation: gsap.from(".logo", {
-    x: "42.4vh",
-    y: "61.4vh",
+    x: "16.9vw",
+    y: "67vh",
     scale: 6,
     yPercent: -50,
   }),
