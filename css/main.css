@@ -195,6 +195,7 @@ body {
 	0%{
 		top: -170px;
 		transform: rotateX(-90deg);
+    opacity: 0;
 	}
 	5%{
 		top: 30px;
@@ -217,6 +218,7 @@ body {
 	15%{
 		top: -170px;
 		transform: rotateX(-90deg);
+    opacity: 0;
 	}
 	20%{
 		top: 30px;
@@ -239,6 +241,7 @@ body {
 	30%{
 		top: -170px;
 		transform: rotateX(-90deg);
+    opacity: 0;
 	}
 	35%{
 		top: 30px;
@@ -261,6 +264,7 @@ body {
 	45%{
 		top: -170px;
 		transform: rotateX(-90deg);
+    opacity: 0;
 	}
 	50%{
 		top: 30px;
@@ -283,6 +287,7 @@ body {
 	65%{
 		top: -170px;
 		transform: rotateX(-90deg);
+    opacity: 0;
 	}
 	70%{
 		top: 30px;
@@ -305,6 +310,7 @@ body {
 	85%{
 		top: -170px;
 		transform: rotateX(-90deg);
+    opacity: 0;
 	}
 	90%{
 		top: 30px;
