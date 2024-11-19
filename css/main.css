@@ -149,15 +149,14 @@ body {
   font-size: 220px;
   font-weight: 900;
   font-style: italic;
-  padding-top: 235px;
+  padding-top: 280px;
   line-height: 0.7;
 }
 
 #updates {
   font-size: 40px;
-  padding-top: 143px;
-  display: inline-block;
   position: relative;
+  white-space: nowrap;
 }
 
 #updates div {
@@ -194,21 +193,21 @@ body {
 
 @keyframes rollDown {
 	0%{
-		top: 143px;
+		top: -170px;
 		transform: rotateX(-90deg);
 	}
 	5%{
-		top: 200px;
+		top: 30px;
 		transform: rotateX(0deg);
 		opacity: 1;
 	}
 	10%{
-		top: 200px;
+		top: 30px;
 		transform: rotateX(0deg);
 		opacity: 1;
 	}
 	15%{
-		top: 253px;
+		top: 230px;
 		transform: rotateX(30deg);
 		opacity: 0;
 	}
@@ -216,21 +215,21 @@ body {
 
 @keyframes rollDown2 {
 	15%{
-		top: 143px;
+		top: -170px;
 		transform: rotateX(-90deg);
 	}
 	20%{
-		top: 200px;
+		top: 30px;
 		transform: rotateX(0deg);
 		opacity: 1;
 	}
 	25%{
-		top: 200px;
+		top: 30px;
 		transform: rotateX(0deg);
 		opacity: 1;
 	}
 	30%{
-		top: 253px;
+		top: 230px;
 		transform: rotateX(30deg);
 		opacity: 0;
 	}
@@ -238,21 +237,21 @@ body {
 
 @keyframes rollDown3 {
 	30%{
-		top: 143px;
+		top: -170px;
 		transform: rotateX(-90deg);
 	}
 	35%{
-		top: 200px;
+		top: 30px;
 		transform: rotateX(0deg);
 		opacity: 1;
 	}
 	40%{
-		top: 200px;
+		top: 30px;
 		transform: rotateX(0deg);
 		opacity: 1;
 	}
 	45%{
-		top: 253px;
+		top: 230px;
 		transform: rotateX(30deg);
 		opacity: 0;
 	}
@@ -260,21 +259,21 @@ body {
 
 @keyframes rollDown4 {
 	45%{
-		top: 143px;
+		top: -170px;
 		transform: rotateX(-90deg);
 	}
 	50%{
-		top: 200px;
+		top: 30px;
 		transform: rotateX(0deg);
 		opacity: 1;
 	}
 	55%{
-		top: 200px;
+		top: 30px;
 		transform: rotateX(0deg);
 		opacity: 1;
 	}
 	60%{
-		top: 253px;
+		top: 230px;
 		transform: rotateX(30deg);
 		opacity: 0;
 	}
@@ -282,21 +281,21 @@ body {
 
 @keyframes rollDown5 {
 	65%{
-		top: 143px;
+		top: -170px;
 		transform: rotateX(-90deg);
 	}
 	70%{
-		top: 200px;
+		top: 30px;
 		transform: rotateX(0deg);
 		opacity: 1;
 	}
 	75%{
-		top: 200px;
+		top: 30px;
 		transform: rotateX(0deg);
 		opacity: 1;
 	}
 	80%{
-		top: 253px;
+		top: 230px;
 		transform: rotateX(30deg);
 		opacity: 0;
 	}
@@ -304,21 +303,21 @@ body {
 
 @keyframes rollDown6 {
 	85%{
-		top: 143px;
+		top: -170px;
 		transform: rotateX(-90deg);
 	}
 	90%{
-		top: 200px;
+		top: 30px;
 		transform: rotateX(0deg);
 		opacity: 1;
 	}
 	95%{
-		top: 200px;
+		top: 30px;
 		transform: rotateX(0deg);
 		opacity: 1;
 	}
 	100%{
-		top: 253px;
+		top: 230px;
 		transform: rotateX(30deg);
 		opacity: 0;
 	}
