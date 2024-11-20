@@ -5,85 +5,99 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Xinru Shen">
+    <meta name="description" content="Personal Website">
     <title>Home</title>
+
+    <!--Favicon-->
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
     <link rel="manifest" href="favicon/site.webmanifest">
+
+    <!--Logo Animation-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+
+    <!--Fonts & Symbols-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Sirin+Stencil&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
     <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
-  <div class="navbar">
-    <span class="material-symbols-outlined" onclick="openNav()">menu</span>
-    <span class="material-symbols-outlined" onclick="openSearch()">search</span>
-    <span class="material-symbols-outlined ml-auto" onclick="openLang()">translate</span>
-    <span class="material-symbols-outlined" id="light_mode">light_mode</span>
-  </div>
+  <div class="section" id="home">
+    <div class="navbar">
+      <span class="material-symbols-outlined" onclick="openNav()">menu</span>
+      <span class="material-symbols-outlined" onclick="openSearch()">search</span>
+      <span class="material-symbols-outlined ml-auto" onclick="openLang()">translate</span>
+      <span class="material-symbols-outlined" id="light_mode">light_mode</span> <!--fix the id name for light mode later-->
+    </div>
 
-  <div id="sidepanel" class="sidepanel">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#hobbies">Hobbies</a>
-    <a href="#projects">Projects</a>
-    <a href="#publications">Publications</a>
-  </div>
-
-  <div id="searchpanel" class="searchpanel">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeSearch()">×</a>
-    <a href="https://www.google.com/search?client=firefox-b-1-d&q=404+not+found", target="_blank">search starts here...</a>
-  </div>
-
-  <div id="langpanel" class="langpanel">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeLang()">×</a>
-    <a href="https://www.google.com/search?client=firefox-b-1-d&q=google+translate", target="_blank">中文</a>
-    <a href="https://www.google.com/search?client=firefox-b-1-d&q=google+translate", target="_blank">English</a>
-    <a href="https://www.google.com/search?client=firefox-b-1-d&q=google+translate", target="_blank">Français</a>
-    <a href="https://www.google.com/search?client=firefox-b-1-d&q=google+translate", target="_blank">Italiano</a>
-    <a href="https://www.google.com/search?client=firefox-b-1-d&q=google+translate", target="_blank">Deutsch</a>
-    <a href="https://www.google.com/search?client=firefox-b-1-d&q=google+translate", target="_blank">Español</a>
-    <a href="https://www.google.com/search?client=firefox-b-1-d&q=google+translate", target="_blank">日本語</a>
-    <a href="https://www.google.com/search?client=firefox-b-1-d&q=google+translate", target="_blank">한국어</a>
-    <a href="https://www.google.com/search?client=firefox-b-1-d&q=google+translate", target="_blank">Pусский</a>
-  </div>
+    <div class="panel">
+      <div id="sidepanel" class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#hobbies">Hobbies</a>
+        <a href="#projects">Projects</a>
+        <a href="#publications">Publications</a>
+      </div>
   
-  <div class="text-container">
-    <div class="left-container">
-      <div class="left-textbox" id="top">Hi!<br>I'm...</div>
-      <div class="left-textbox" id="updates">
-        <div>glad you found my website!</div>
-        <div>working on a weather project.</div>
-        <div>a professional bookbinder.</div>
-        <div>an amateur book repairer.</div>
-        <div>making 30 books at the same time.</div>
-        <div>hoping you have a great day!</div>
+      <div id="searchpanel" class="searchpanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeSearch()">×</a>
+        <a href="https://www.google.com/search?client=firefox-b-1-d&q=404+not+found", target="_blank">search starts here...</a>
+      </div>
+  
+      <div id="langpanel" class="langpanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeLang()">×</a>
+        <a href="https://www.google.com/search?client=firefox-b-1-d&q=google+translate", target="_blank">中文</a>
+        <a href="https://www.google.com/search?client=firefox-b-1-d&q=google+translate", target="_blank">English</a>
+        <a href="https://www.google.com/search?client=firefox-b-1-d&q=google+translate", target="_blank">Français</a>
+        <a href="https://www.google.com/search?client=firefox-b-1-d&q=google+translate", target="_blank">Italiano</a>
+        <a href="https://www.google.com/search?client=firefox-b-1-d&q=google+translate", target="_blank">Deutsch</a>
+        <a href="https://www.google.com/search?client=firefox-b-1-d&q=google+translate", target="_blank">Español</a>
+        <a href="https://www.google.com/search?client=firefox-b-1-d&q=google+translate", target="_blank">日本語</a>
+        <a href="https://www.google.com/search?client=firefox-b-1-d&q=google+translate", target="_blank">한국어</a>
+        <a href="https://www.google.com/search?client=firefox-b-1-d&q=google+translate", target="_blank">Pусский</a>
       </div>
     </div>
 
-    <div class="right-container">
-      <div class="right-textbox">
-        <span class="color-top">XINRU SHEN</span><br>
-        <span class="color-middle">XINRU SHEN</span><br>
-        <span class="color-bottom">XINRU SHEN</span>
-        <h1 class="logo">XINRU SHEN</h1>
+    <div class="hero">
+      <div class="left-container">
+        <div class="left-textbox" id="top">Hi!<br>I'm__</div>
+        <div class="left-textbox" id="updates">
+          <div>glad you found my website!</div>
+          <div>working on a weather project.</div>
+          <div>a professional bookbinder.</div>
+          <div>an amateur book repairer.</div>
+          <div>making 30 books at the same time.</div>
+          <div>hoping you have a great day!</div>
+        </div>
+      </div>
+
+      <div class="right-container">
+        <div class="right-textbox">
+          <span class="color-top">XINRU SHEN</span><br>
+          <span class="color-middle">XINRU SHEN</span><br>
+          <span class="color-bottom">XINRU SHEN</span><br>
+          <span class="color-logo">XINRU SHEN</span>
+        </div>
       </div>
     </div>
   </div>
 
-  <div class="section" id="home"></div>
+  <!-- 
   <div class="section" id="about"><h1>About</h1></div>
   <div class="section" id="skills"><a href="html/skills.html"><h2>Skills</h2></a></div>
   <div class="section" id="hobbies"><a href="html/hobbies.html"><h2>Hobbies</h2></a></div>
   <div class="section" id="projects"><a href="html/projects.html"><h2>Projects</h2></a></div>
-  <div class="section" id="publications"><a href="html/publications.html"><h2>Publications</h2></a></div>
+  <div class="section" id="publications"><a href="html/publications.html"><h2>Publications</h2></a></div> 
+  -->
   
   <script src="js/script.js"></script>
 </body>

@@ -7,6 +7,14 @@ body {
   background-color: #182913;
 }
 
+.section {
+  min-height: 100vh;
+  scroll-snap-align: start;
+  display: flex;
+  color: #CBADC1;
+  padding: 0 1em;
+}
+
 .navbar {
   top: 0;
   width: 100%;
@@ -135,7 +143,7 @@ body {
   font-size: 40px;
 }
 
-.text-container {
+.hero {
   display: flex;
   justify-content: space-between;
 } 
@@ -329,13 +337,6 @@ body {
 	}
 }
 
-
-
-
-
-
-
-
 .right-textbox {
   flex-direction: column;
   padding-top: 215px;
@@ -365,7 +366,11 @@ body {
   color: #CCBBDB;
 }
 
-.logo {
+.color-logo {
+  color: #CBADC1;
+}
+
+/* .logo {
   position: fixed;
   top: 0;
   left: 50%;
@@ -377,7 +382,7 @@ body {
   color: #CBADC1;
   padding: 1.21em;
   z-index: 999;
-}
+} */
 
 
 
@@ -385,14 +390,6 @@ body {
 
 
 
-.section {
-  min-height: 100vh;
-  scroll-snap-align: start;
-  display: flex;
-  color: #CBADC1;
-  font-size: 3rem;
-  padding: 0 1em;
-}
 
 
 
@@ -410,6 +407,10 @@ body {
 }
 
 .light_mode .material-symbols-outlined {
+  color: #182913;
+}
+
+.light_mode .section {
   color: #182913;
 }
 
@@ -441,6 +442,3 @@ body {
   color: #182913;
 }
 
-.light_mode .section {
-  color: #182913;
-}
